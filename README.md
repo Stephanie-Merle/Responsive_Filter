@@ -16,7 +16,7 @@ Responsive filter for pictures and notes
 
 ## Author
 
-** ** [Stephanie Merle](https://github.com/Stephanie-Merle)
+* [Stephanie Merle](https://github.com/Stephanie-Merle)
 
 
 ## License
