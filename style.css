@@ -1,0 +1,102 @@
+.container{
+    text-align: center;
+}
+.btn-menu{
+    margin: .75rem .2rem;
+    background-color: rgb(206, 206, 209);
+    border: 1px solid rgb(112, 127, 143);
+    border-radius: 1.75rem;
+    padding: .375rem .75rem;
+    transition: .2s;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.719);
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.btn-menu:hover{
+    background-color: rgb(137, 160, 209);
+    color: rgb(250, 250, 253);
+    transition: .5s;
+    outline: none;
+}
+.btn-menu:focus{
+    outline: none; /* take away blue outline on selected button */
+}
+.card{
+    margin: .7rem;
+}
+.card-img-overlay{
+    border: 6px solid rgba(212, 209, 209, 0.404);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.719);
+}
+.card-img-overlay:hover{
+    border: 6px solid rgba(247, 242, 242, 0.562);
+}
+/* 3 columns by default */
+.grid-sizer { width: 50%; }
+.grid-item { width: 40%;}
+
+@media screen and (min-width: 768px) {
+  /* 5 columns for larger screens */
+  .grid-sizer { width: 20%; }
+  .grid-item { width: 20%;}
+}
+
+.grid-item--width2 { width: 40%;}
+.grid-item--width3 { width: 100%;}
+h4.card-title{
+    font-family: 'Londrina Shadow', cursive;
+    text-transform: uppercase;
+    background-color: rgba(17, 17, 17, 0.616);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.719);
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: .1rem .5rem;
+}
+h5.card-title{
+    font-family: 'Londrina Shadow', cursive;
+    text-transform: uppercase;
+    background-color: rgb(190, 203, 231);
+    box-shadow: 0 0 1px rgba(53, 52, 52, 0.2);
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+}
+.intro{
+    font-family: 'Londrina Shadow', cursive;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+.header{
+    background-color: rgb(245, 245, 241);
+    border-radius: .7rem;
+    padding-top: 1rem;
+    margin: .5rem .5rem;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.719);
+}
+.nav-link{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.4rem;
+    color: rgb(56, 56, 56);
+}
+.nav-link:hover{
+    color:  rgb(137, 160, 209);
+
+}
+.navbar-brand{
+    color:  rgb(137, 160, 209);
+    font-size: 1.7rem;
+}
+.active{
+    color: rgb(97, 115, 153);
+    text-decoration: underline;
+}
+p{
+    font-family: 'Indie Flower', cursive;
+    color: grey;
+    font-size: 1.7rem;
+    padding: none;
+    margin: none;
+}

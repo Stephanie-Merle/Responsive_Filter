@@ -1,0 +1,15 @@
+{
+  "name": "travel_blog",
+  "version": "1.0.0",
+  "description": "Travel Blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "smerle",
+  "license": "GNU General Public License v.3",
+  "dependencies": {
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.4.1"
+  }
+}

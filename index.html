@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Responsive photo filter</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-plane-departure"></i> Responsive Filter</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Photos </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="notes.html">Notes</a>
+                </li>
+              </ul>
+               <!--<span class="navbar-text"> <a class="nav-link" href="#">Text on the left</a> </span>-->
+            </div>
+        </nav>
+
+
+        <div class="container">
+          <div class="header">
+              <h1 class="intro">PHOTO FILTER</h1>
+              <p>Click on pictures for changing size</p>
+              <div class="button-group filter-button-group">
+                  <button data-filter="*" type="button" class="btn-menu">All</button>
+                  <button data-filter=".kr" type="button" class="btn-menu">Korea</button>
+                  <button data-filter=".th" type="button" class="btn-menu">Thailand</button>
+                  <button data-filter=".cb" type="button" class="btn-menu">Cambodia</button>
+                  <button data-filter=".beach" type="button" class="btn-menu">Beaches</button>
+                  <button data-filter=".tp" type="button" class="btn-menu">Temples</button>
+              </div>
+          </div>
+          <div class="grid">
+              <div class="grid-sizer"></div>
+                  <div class="grid-item cb tp"><div class="card bg-dark text-white">
+                      <img src="img/Angkor_temple_cambodia.jpg" class="card-img" alt="Angkor temple Cambodia">
+                      <div class="card-img-overlay">
+                      </div>
+                  </div></div>
+                  <div class="grid-item grid-item th"><div class="card bg-dark text-white">
+                      <img src="img/Bangkok_cycling_bangkachao.jpg" class="card-img" alt="cycling Bangkok jungle thailand">
+                      <div class="card-img-overlay">
+                      </div>
+                  </div></div>
+                  <div class="grid-item cb tp"><div class="card bg-dark text-white">
+                      <img src="img/Cambodia_temple_sunset_view.jpg" class="card-img" alt="Cambodian temple sunset">
+                      <div class="card-img-overlay">
+                      </div>
+                  </div></div>
+                  <div class="grid-item th"><div class="card bg-dark text-white">
+                    <img src="img/Bangkok_sunset_view.jpg" class="card-img" alt="sunset Bangkok thailand">
+                    <div class="card-img-overlay">
+                    </div>
+                  </div></div>
+                  <div class="grid-item "><div class="card bg-dark text-white">
+                    <img src="img/Kuala_lumpur_day_city_view.jpg" class="card-img" alt="Kuala lumpur city skytower">
+                    <div class="card-img-overlay">
+                    </div>
+                  </div></div>
+                  <div class="grid-item kr"><div class="card bg-dark text-white">
+                    <img src="img/Seoul_bukchon_hanok_village.jpg" class="card-img" alt="Korean traditional village">
+                    <div class="card-img-overlay">
+                    </div>
+                  </div></div>
+                  <div class="grid-item kr tp"><div class="card bg-dark text-white">
+                    <img src="img/Seoul_temple_view.jpg" class="card-img" alt="korean temple seoul">
+                    <div class="card-img-overlay">
+                    </div>
+                  </div></div>
+                  <div class="grid-item th beach"><div class="card bg-dark text-white">
+                    <img src="img/Thailand_beach_view.jpg" class="card-img" alt="sea thailand beach">
+                    <div class="card-img-overlay">
+                    </div>
+                  </div></div>
+                  <div class="grid-item grid-item beach th"><div class="card bg-dark text-white">
+                      <img src="img/Thailand_beautiful_beach.jpg" class="card-img" alt="sea thailand beach">
+                      <div class="card-img-overlay">
+                      </div>
+                  </div></div>
+                  <div class="grid-item th"><div class="card bg-dark text-white">
+                      <img src="img/Thailand_island_sea_view.jpg" class="card-img" alt="thai island sea">
+                      <div class="card-img-overlay">
+                      </div>
+                  </div></div>
+                  <div class="grid-item th"><div class="card bg-dark text-white">
+                    <img src="img/Thailand_island_view.jpg" class="card-img" alt="thai island">
+                    <div class="card-img-overlay">
+                    </div>
+                  </div></div>
+                  <div class="grid-item map"><div class="card bg-dark text-white">
+                    <img src="img/Thailand_nan_mountain_view.jpg" class="card-img" alt="thailand mountain nan province">
+                    <div class="card-img-overlay">
+                    </div>
+                  </div></div>  
+                  <div class="grid-item th"><div class="card bg-dark text-white">
+                    <img src="img/Thailand_nan_province.jpg" class="card-img" alt="thailand mountain nan province">
+                    <div class="card-img-overlay">
+                    </div>
+                  </div></div>
+                  <div class="grid-item map"><div class="card bg-dark text-white">
+                    <img src="img/thailand_camping_spot_mountain.jpg" class="card-img" alt="thailand camping mountain">
+                    <div class="card-img-overlay">
+                    </div>
+                  </div></div>  
+                     
+          </div>
+        </div>
+ 
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- CDN link for Bootstrap 4.3.1 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <script src="app.js" type="text/javascript"></script> 
+</body>
+</html>
