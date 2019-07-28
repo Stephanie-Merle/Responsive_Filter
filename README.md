@@ -10,8 +10,9 @@ Responsive filter for pictures and notes
 
 ## Dependencies
 
-*  [Isotope](http://isotope.metafizzy.co)
-* Jquery
+*  [Isotope](http://isotope.metafizzy.co) V 3.0.6
+*  Jquery V 3.4.1
+*  [imagesLoaded](https://imagesloaded.desandro.com/) V 4.1.4
 
 
 ## Author

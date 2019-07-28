@@ -8,7 +8,6 @@
     border-radius: 1.75rem;
     padding: .375rem .75rem;
     transition: .2s;
-    cursor: pointer;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.719);
     font-family: 'Indie Flower', cursive;
     font-size: 1.3rem;
@@ -33,18 +32,18 @@
 .card-img-overlay:hover{
     border: 6px solid rgba(247, 242, 242, 0.562);
 }
-/* 3 columns by default */
-.grid-sizer { width: 50%; }
+/* 3 columns by default, small screens */
+.grid-sizer { width: 50%;}
 .grid-item { width: 40%;}
-
-@media screen and (min-width: 768px) {
-  /* 5 columns for larger screens */
-  .grid-sizer { width: 20%; }
-  .grid-item { width: 20%;}
-}
-
 .grid-item--width2 { width: 40%;}
 .grid-item--width3 { width: 100%;}
+
+@media screen and (min-width: 760px) {
+  /*5 columns for larger screens */
+  .grid-sizer { width: 20%; }
+  .grid-item { width: 20%;}
+
+}
 h4.card-title{
     font-family: 'Londrina Shadow', cursive;
     text-transform: uppercase;
@@ -83,7 +82,6 @@ h5.card-title{
 }
 .nav-link:hover{
     color:  rgb(137, 160, 209);
-
 }
 .navbar-brand{
     color:  rgb(137, 160, 209);
@@ -99,4 +97,8 @@ p{
     font-size: 1.7rem;
     padding: none;
     margin: none;
+}
+button.navbar-toggler{
+    font-size: 2rem;
+    color:  rgb(137, 160, 209);
 }
