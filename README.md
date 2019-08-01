@@ -24,6 +24,6 @@ Responsive filter for pictures and notes
 
  [GNU General Public License v.3](https://www.gnu.org/licenses/gpl-3.0.en.html) See the LICENSE file for more information
 
-
+![](bin/filterView.gif)
 
 
