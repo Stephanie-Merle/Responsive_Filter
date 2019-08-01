@@ -1,6 +1,12 @@
 .container{
     text-align: center;
 }
+ul{
+    /* Take off the points of the list elements */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 .btn-menu{
     margin: .75rem .2rem;
     background-color: rgb(206, 206, 209);
@@ -56,11 +62,15 @@ h4.card-title{
 h5.card-title{
     font-family: 'Londrina Shadow', cursive;
     text-transform: uppercase;
-    background-color: rgb(190, 203, 231);
-    box-shadow: 0 0 1px rgba(53, 52, 52, 0.2);
+    margin: .6rem 5rem;
+    background-color: rgb(223, 229, 240);
     font-size: 2rem;
     font-weight: 600;
     color: black;
+    -webkit-box-shadow: 1px 1px 3px 4px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    1px 1px 3px 4px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         1px 1px 3px 4px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    border-radius: 1rem;
 }
 .intro{
     font-family: 'Londrina Shadow', cursive;
@@ -72,7 +82,7 @@ h5.card-title{
     background-color: rgb(245, 245, 241);
     border-radius: .7rem;
     padding-top: 1rem;
-    margin: .5rem .5rem;
+    margin: .5rem .5rem;  
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.719);
 }
 .nav-link{
@@ -101,4 +111,34 @@ p{
 button.navbar-toggler{
     font-size: 2rem;
     color:  rgb(137, 160, 209);
+}
+.fa-window-close{
+    float: right;
+    margin: auto 1rem;
+    color: rgb(253, 254, 255);
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.795);
+    font-size: 2.4rem;
+    opacity: 0;
+    transition: 0.8s linear;
+}
+.fa-window-close:hover{
+    color:rgb(185, 217, 253);
+}
+.card-title:hover .fa-window-close{
+    opacity: 1.0;
+}
+.fa-check{
+    float: left;
+    margin-left: 2rem;
+    font-size: 2.2rem;
+    color: rgba(204, 200, 200, 0.411);
+}
+.fa-check:hover{
+    color: rgba(129, 195, 248, 0.411);
+}
+.checked{
+    color: rgb(104, 214, 248);
+}
+.checked:hover{
+    color:  rgb(104, 214, 248);
 }

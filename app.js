@@ -12,6 +12,17 @@
  $(this).toggleClass( 'selected' );
   });
 
+// DOM manipulation delete note
+$('span').click(function() { 
+  $(this).parent().remove();
+  $grid.isotope(); 
+});
+
+// DOM manipulation check note
+$('.fa-check').click(function() { 
+  $(this).toggleClass('checked'); 
+});
+
 // DOM manipulation pictures size
 $('.grid-item').click(function() {
   $(this).toggleClass('grid-item');
@@ -41,3 +52,4 @@ var $gridm = $('.grid').masonry({
 $gridm.imagesLoaded().progress( function() {
   $gridm.masonry('layout');
 });
+
