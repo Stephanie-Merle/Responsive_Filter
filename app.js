@@ -1,5 +1,5 @@
 
- var $grid = $('.grid').isotope({
+ let $grid = $('.grid').isotope({
   masonry: {
     itemSelector: '.grid-item',
     percentPosition: true,
@@ -7,42 +7,42 @@
    }
   });
 
-// DOM manipulation, selected filter
- $('.btn-menu').click(function() {
- $(this).toggleClass( 'selected' );
-  });
-
-// event listener on KEYPRESS, 13 === enter key
-$('input').keypress(function(event){
-  if(event.which === 13){
-    // record the input value into a variable 
-    var todoNext = $(this).val();
-    // input value and push into the grid element
-    $(".notes").append("<div class=\"note grid-item--width3\">" + "<h5 class=\"card-title\">" + "<i class=\"fas fa-check\"></i>" + todoNext + "<span>" + "<i class=\"fas fa-window-close\">" + "</i>" + "</span>" + "</h5>" + "</div>");
-    //finally clean the input box;
-    $('input[type="text"]').val("");
-    // Reload view
-    $grid.isotope(); 
-  };
-}); 
-
-$("ul").on("click" , "li" , function(){
-  $(this).toggleClass("selected");
-});
-
-// DOM manipulation delete note
+// DOM manipulation delete NOTE
 // the target of addListener should be an existing element
-$('.notes').on('click','span',function() { 
+$('.grid').on('click','span',function() { 
   $(this).parent().remove();
   $grid.isotope(); 
 });
 
-// DOM manipulation check note
+// DOM manipulation check NOTE
 // the target of addListener should be an existing element
-$('.notes').on('click','.fa-check',function() { 
+$('.grid').on('click','.fa-check',function() { 
   $(this).toggleClass('checked'); 
   $grid.isotope();
 });
+
+// Enven listener on Keypress ENTER in NOTE
+$('input').keypress(function(event){
+  if(event.which === 13){
+    // record the input value into a variable 
+    let todoNext = $(this).val();
+    // input value and push into the grid element
+    var $items = $('<div class=\"notes grid-item--width3\"><h5 class=\"card-title\"><i class=\"fas fa-check\"></i>' + todoNext + '<span><i class=\"fas fa-window-close\"></i></span></h5></div>');
+    // append items to grid
+    $grid.append( $items )
+      // add and lay out newly appended items
+      .isotope( 'appended', $items );
+    //finally clean the input box;
+    $('input[type="text"]').val('');
+  };
+  // reload view
+  $grid.isotope();
+});
+
+//  selected filter button
+ $('.btn-menu').click(function() {
+ $(this).toggleClass( 'selected' );
+  });
 
 // DOM manipulation pictures size
 $('.grid-item').click(function() {
@@ -51,20 +51,19 @@ $('.grid-item').click(function() {
   $grid.isotope(); 
 });
 
-// filter items on click event from header buttons
+// DOM manipulation, filter items on click event from header buttons
 $('.filter-button-group').on( 'click', 'button', function() {
-  var filterValue = $(this).attr('data-filter');
+  let filterValue = $(this).attr('data-filter');
   $grid.isotope({ filter: filterValue });
   });
 
-
-
 // init Masonry to use imagesLoaded
-var $gridm = $('.grid').masonry({
+let $gridm = $('.grid').masonry({
   itemSelector: '.grid-item',
     percentPosition: true,
     columnWidth: '.grid-sizer',
 });
+
 // layout Masonry after each image loads 
 $gridm.imagesLoaded().progress( function() {
   $gridm.masonry('layout');

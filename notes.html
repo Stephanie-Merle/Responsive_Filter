@@ -27,44 +27,44 @@
                   <a class="nav-link active" href="notes.html">Notes</a>
                 </li>
               </ul>
-              <!--<span class="navbar-text"> <a class="nav-link" href="#">Text on the left</a> </span>-->
             </div>
           </nav>
 
+          <div class="container">
+              <div class="header">
+                  <h1 class="intro">To do list</h1>
+                  <div class="button-group filter-button-group">
+                    <button data-filter="*" type="button" class="btn-menu">All</button>
+                    <button data-filter=".first" type="button" class="btn-menu">Urgent</button>
+                    <button data-filter=".w" type="button" class="btn-menu">Work</button>
+                    <button data-filter=".perso" type="button" class="btn-menu">Perso</button>
+                 </div>
+              </div>
 
-        <div class="container">
-        <div class="header">
-            <h1 class="intro">To do list</h1>
-            <div class="button-group filter-button-group">
-              <button data-filter="*" type="button" class="btn-menu">All</button>
-              <button data-filter=".first" type="button" class="btn-menu">Urgent</button>
-              <button data-filter=".w" type="button" class="btn-menu">Work</button>
-              <button data-filter=".perso" type="button" class="btn-menu">Perso</button>
               <div class="form">
                   <!--New note-->
-                  <input type="text" id="myInput" placeholder="Add new ToDo">
-                  <button type="button" >Urgent</button>
-                  <button type="button" >Work</button>
-                  <button type="button" >Perso</button>
-                  </div>
-           </div>
-        </div>
-        <div class="grid">
-          <div class="grid-sizer"></div>
-              <div class="notes">
-                <div class="note grid-item--width3 w">
+                  <input type="text" id="myInput" class="btn btn-outline-secondary" placeholder="Add new ToDo">
+                  <select class="custom-select custom-select-md" id="custom-cat">
+                      <option selected>Category</option>
+                      <option value="1">Urgent</option>
+                      <option value="2">Work</option>
+                      <option value="3">Perso</option>
+                    </select>
+              </div>
+
+              <div class="grid" id="memo">
+                <div class="grid-sizer"></div>
+                <div class="notes grid-item--width3 w">
                   <h5 class="card-title"><i class="fas fa-check"></i>Answer email coworker<span><i class="fas fa-window-close"></i></span></h5>
                 </div>
-                <div class="note grid-item--width3 perso">
-                      <h5 class="card-title"><i class="fas fa-check"></i>Buy a new printer<span><i class="fas fa-window-close"></i></span></h5>
+                <div class="notes grid-item--width3 perso">
+                  <h5 class="card-title"><i class="fas fa-check"></i>Buy a new printer<span><i class="fas fa-window-close"></i></span></h5>
                 </div>
-                <div class="note grid-item--width3 w first">
-                      <h5 class="card-title"><i class="fas fa-check"></i>Book meeting room for monday<span><i class="fas fa-window-close"></i></span></h5>
+                <div class="notes grid-item--width3 w first">
+                  <h5 class="card-title"><i class="fas fa-check"></i>Book meeting room for monday<span><i class="fas fa-window-close"></i></span></h5>
                 </div>
               </div>
-         
-        </div>
-        </div>
+              </div>
 
 
         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>

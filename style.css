@@ -59,6 +59,10 @@ button.navbar-toggler{
 .checked:hover{
     color:  rgb(104, 214, 248);
 }
+#custom-cat{
+    width: 10%;
+    display: inline-block;
+}
 .fa-window-close{
     float: right;
     margin: auto 1rem;
@@ -75,7 +79,8 @@ button.navbar-toggler{
     color:rgb(185, 217, 253);
 }
 .form{
-    padding-bottom: .5rem;
+    text-align: center;
+    justify-content: center;
 }
 i{
     float: left;
@@ -140,7 +145,10 @@ h5.card-title{
     font-weight: 800;
 }
 input{
-    width:50%;
+    width: 40%;
+    height: 2.5rem;
+    margin:auto;
+    display: block;
 }
 .nav-link{
     font-family: 'Indie Flower', cursive;
