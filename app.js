@@ -26,14 +26,17 @@ $('input').keypress(function(event){
   if(event.which === 13){
     // record the input value into a variable 
     let todoNext = $(this).val();
-    // input value and push into the grid element
-    var $items = $('<div class=\"notes grid-item--width3\"><h5 class=\"card-title\"><i class=\"fas fa-check\"></i>' + todoNext + '<span><i class=\"fas fa-window-close\"></i></span></h5></div>');
-    // append items to grid
-    $grid.append( $items )
-      // add and lay out newly appended items
-      .isotope( 'appended', $items );
-    //finally clean the input box;
-    $('input[type="text"]').val('');
+    if(todoNext){   // check if input isn't empty
+      let catFilter= $('#custom-cat').val();
+      // input value with filter if category selected
+      const $items = $('<div class=\"notes grid-item--width3\"><h5 class=\"card-title\"><i class=\"fas fa-check\"></i>' + todoNext + '<span><i class=\"fas fa-window-close\"></i></span></h5></div>').addClass(catFilter);
+      // append items to grid
+      $grid.append( $items )
+        // add and lay out newly appended items
+        .isotope( 'appended', $items );
+      //finally clean the input box;
+      $('input[type="text"]').val('');
+    }
   };
   // reload view
   $grid.isotope();
